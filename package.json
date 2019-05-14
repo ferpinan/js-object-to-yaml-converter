@@ -1,6 +1,6 @@
 {
     "name": "webapp",
-    "version": "0.5.0",
+    "version": "1.0.0",
     "private": true,
     "dependencies": {
         "@ikusi/react-component-boilerplate": "^0.1.0",
