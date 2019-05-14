@@ -1,5 +1,18 @@
 {
     "welcome": {
         "message": "Bienvenidos al Widget React!"
+    },
+    "react": {
+        "component": {
+            "boilerplate": {
+                "title": "Usando Un componente externo (react-component-boilerplate)",
+                "button": "¡Hola! ¡Soy un botoncito! No me hagas click por favor :(",
+                "buttonAfterClick": "Te lo dije... Tengo miedo :(",
+                "element01": "Elemento 01",
+                "element02": "Elemento 02",
+                "element03": "Elemento 03",
+                "element04": "Elemento 04"
+            }
+        }
     }
 }
