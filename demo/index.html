@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React Widget Demo</title>
+</head>
+
+<body>
+<p>Asi es ocmo lo utilizarias en la vida real</p>
+
+<script src="../dist/ReactWidget.js"></script>
+<div id="main">
+    <!-- This is where our React app will go -->
+</div>
+<script>
+    var config = {
+        containerId: "main",
+        lang: "en"
+    };
+
+    ReactWidget.start(config);
+</script>
+</body>
+</html>
