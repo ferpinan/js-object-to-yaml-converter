@@ -5,7 +5,7 @@ config.entry = ['./preview/preview.js'];
 config.output = {
 	path: '/',
 	publicPath: '/dist/',
-	filename: 'ReactWidget.js'
+	filename: 'JsObjectToYaml.js'
 };
 config.devtool = 'sourcemaps';
 

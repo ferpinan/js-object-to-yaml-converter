@@ -1,4 +1,3 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const env = process.env.NODE_ENV;
 const webpack = require('webpack');
 const version = require("./package.json").version;
@@ -19,20 +18,8 @@ module.exports = {
                         ]
                     }
                 }
-            },
-            {
-                test: /\.(png|jpg|jpeg|gif|svg|woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?|(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?)$/,
-                loader: "base64-inline-loader?limit=1000&name=[name][hash].[ext]",
-            },
-            {test: /\.css$/, use: ['style-loader', 'css-loader']},
-            {
-                test: /\.scss$/,
-                use: [
-                    "style-loader", // creates style nodes from JS strings
-                    "css-loader", // translates CSS into CommonJS
-                    "sass-loader" // compiles Sass to CSS, using Node Sass by default
-                ]
             }
+
         ]
     },
     resolve: {

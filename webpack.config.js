@@ -3,14 +3,13 @@ const path = require('path');
 
 config.mode= 'production';
 config.entry = {
-	ReactWidget: './src/index.js'
+	JsObjectToYaml: './src/index.js'
 };
 config.devtool = 'sourcemaps';
 config.output = {
 	path: path.resolve(__dirname, './dist'),
-	// filename: '[name].' + version + '.js',
 	filename: '[name].js',
-    library: "ReactWidget",
+    library: "JsObjectToYaml",
     libraryTarget: 'umd',
 };
 

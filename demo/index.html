@@ -10,17 +10,25 @@
 <body>
 <p>Asi es como se utilizaria en la vida real</p>
 
-<script src="../dist/ReactWidget.js"></script>
+<script src="../dist/JsObjectToYaml.js"></script>
 <div id="main">
-    <!-- This is where our React app will go -->
+    <button onclick="handleOnClickButton()">Click Me!</button>
 </div>
 <script>
-    var config = {
-        containerId: "main",
-        lang: "en"
-    };
+    var handleOnClickButton = function() {
+		var config = {
+			key1: "value 1",
+			key2: {
+				key21: "value 2.1",
+				key22: "value 2.2.",
+				key23: {
+					key231: ["value 2.3.1 1", "value 2.3.1 2", "value 2.3.1 3"]
+				}
+			}
+		};
 
-    ReactWidget.start(config);
+		JsObjectToYaml.start(config);
+	}
 </script>
 </body>
 </html>
